@@ -1,0 +1,1 @@
+How to pas the data from one j file to another react.js file

@@ -1,0 +1,1 @@
+Should I use separate javascript file or just one big file in Electron desktop app?

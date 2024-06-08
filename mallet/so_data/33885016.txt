@@ -1,0 +1,1 @@
+Onclick activates on start then doe nothing

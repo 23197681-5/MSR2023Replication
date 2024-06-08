@@ -1,0 +1,1 @@
+Electron-builder - Set environment variable during app installation

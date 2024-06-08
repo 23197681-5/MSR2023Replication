@@ -1,0 +1,1 @@
+"require is not defined" error come when i try to import j file (with node modules) to my main electron j file

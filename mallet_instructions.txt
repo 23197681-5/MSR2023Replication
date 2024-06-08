@@ -1,0 +1,9 @@
+
+
+# Parsing
+
+mallet/mallet-2.0.8/bin/mallet import-dir --input mallet/git_data/ --output mallet/git.mallet --keep-sequence --remove-stopwords --extra-stopwords mallet/extra_stopwords_github.txt
+
+# Execution
+
+mallet/mallet-2.0.8/bin/mallet train-topics --random-seed 100 --input mallet/git.mallet --num-topics 15 --optimize-interval 20 --output-state mallet/git-topic-state.gz --output-topic-keys mallet/git_keys.txt --output-doc-topics mallet/git_composition.txt --diagnostics-file mallet/git_results/git_diagnostics.xml

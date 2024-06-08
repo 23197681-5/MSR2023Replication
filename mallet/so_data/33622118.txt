@@ -1,0 +1,1 @@
+How can I display file that have been saved a a Buffer?

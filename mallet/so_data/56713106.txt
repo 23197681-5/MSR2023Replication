@@ -1,0 +1,1 @@
+ElectronJS: Child window doe not move along with parent window on window system

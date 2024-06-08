@@ -1,0 +1,1 @@
+Spectron with mocha and chai doe not work

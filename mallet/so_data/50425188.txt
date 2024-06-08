@@ -1,0 +1,1 @@
+Routes transition doesnt not work in nuxt.js + electron.js

@@ -1,0 +1,1 @@
+Caching image in node-webkit app

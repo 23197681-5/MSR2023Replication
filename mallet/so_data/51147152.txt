@@ -1,0 +1,1 @@
+How do I reference my powershell script in my electron application after building and packaging?

@@ -1,0 +1,1 @@
+Check if particular flag wa sent to NSIS script

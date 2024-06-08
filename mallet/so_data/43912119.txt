@@ -1,0 +1,1 @@
+Open app and pas parameter with deep linking using Electron (macOS)

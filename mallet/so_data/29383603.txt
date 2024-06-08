@@ -1,0 +1,1 @@
+Prevent multiple tray icon in Node Webkit?

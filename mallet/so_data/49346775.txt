@@ -1,0 +1,1 @@
+Electron .ipcRenderer fire twice

@@ -1,0 +1,1 @@
+Unsealed content present in the root directory of an embedded framework

@@ -1,0 +1,1 @@
+Electron - My static header file are not being added

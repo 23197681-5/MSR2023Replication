@@ -1,0 +1,1 @@
+Require node-opcua in electron freeze the electron instance

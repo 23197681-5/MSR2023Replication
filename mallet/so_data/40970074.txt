@@ -1,0 +1,1 @@
+How to pas data between main.js and directory?

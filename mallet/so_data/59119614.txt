@@ -1,0 +1,1 @@
+How doe electron app open another electron app?

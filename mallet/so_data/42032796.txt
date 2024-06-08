@@ -1,0 +1,1 @@
+Nedb update are adding new record instead of updating existing one

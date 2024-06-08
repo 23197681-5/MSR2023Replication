@@ -1,0 +1,1 @@
+API call with axios inside a React app bundled in Electron is returning 400

@@ -1,0 +1,1 @@
+Why doe my Electron build always open with console window

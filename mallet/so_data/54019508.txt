@@ -1,0 +1,1 @@
+Unable to create window app package with electron-packager

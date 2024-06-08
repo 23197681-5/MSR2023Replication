@@ -1,0 +1,1 @@
+Why doe only one BrowserView work with Electron?

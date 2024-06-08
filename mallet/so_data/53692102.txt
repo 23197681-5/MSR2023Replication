@@ -1,0 +1,1 @@
+Access node and electron module in the isolated world

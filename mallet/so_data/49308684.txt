@@ -1,0 +1,1 @@
+Software and hardware requirement of WebGL on Windows

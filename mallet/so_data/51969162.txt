@@ -1,0 +1,1 @@
+How to interact with Electron radio button on the tray menu?

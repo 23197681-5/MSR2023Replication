@@ -1,0 +1,1 @@
+Pass class a parameter to nightmare evaluate

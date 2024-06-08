@@ -1,0 +1,1 @@
+Passing changed variable to a JS function which source and run in HTML file

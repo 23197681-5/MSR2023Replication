@@ -1,0 +1,1 @@
+Electron Application change height permanently when minimizing/maximizing

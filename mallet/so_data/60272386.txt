@@ -1,0 +1,1 @@
+Running .dmg app after building with Electron-Builder lead to "App quit unexpectedly."

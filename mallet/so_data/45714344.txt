@@ -1,0 +1,1 @@
+Getting issue while creating electronjs auto-launch app

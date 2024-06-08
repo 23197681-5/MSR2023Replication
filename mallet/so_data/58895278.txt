@@ -1,0 +1,1 @@
+Vue cli page with sc prependData @import not importing to all page

@@ -1,0 +1,1 @@
+Electron doe not load index.html correctly, file from local folder are not loaded

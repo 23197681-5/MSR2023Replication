@@ -1,0 +1,1 @@
+System freeze when parent and child connectivity

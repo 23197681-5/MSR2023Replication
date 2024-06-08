@@ -1,0 +1,1 @@
+How can I run Wraith and Bash command from my electron app?

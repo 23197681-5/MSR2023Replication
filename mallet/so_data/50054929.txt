@@ -1,0 +1,1 @@
+Open each router link a a new tab in an Electron app

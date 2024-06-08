@@ -1,0 +1,1 @@
+Package node.js app a cross-platform executable, not for desktop app

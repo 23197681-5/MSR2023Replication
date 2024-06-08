@@ -1,0 +1,1 @@
+Where is a detailed list of operating system supported by GitHub' s Electron?

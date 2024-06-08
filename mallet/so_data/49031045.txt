@@ -1,0 +1,1 @@
+Handling Inversify @inject() parameter at class instantiation using typescript

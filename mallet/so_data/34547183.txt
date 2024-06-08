@@ -1,0 +1,1 @@
+which loader to use for js.node file

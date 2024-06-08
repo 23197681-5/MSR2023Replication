@@ -1,0 +1,1 @@
+How can I set property conditionally in Node.js via Atom?

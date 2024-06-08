@@ -1,0 +1,1 @@
+Electron go blank when audio element src attribute ha changed in a React component and the window reloads on linux

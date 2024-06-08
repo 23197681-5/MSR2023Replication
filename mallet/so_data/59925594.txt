@@ -1,0 +1,1 @@
+Attach Knex a global object in Vue.js Electron

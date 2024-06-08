@@ -1,0 +1,1 @@
+CPU usage get higher a more WebRTC peer are added?

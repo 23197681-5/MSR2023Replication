@@ -1,0 +1,1 @@
+Service ajax request from within angular app from electron

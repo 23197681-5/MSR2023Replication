@@ -1,0 +1,1 @@
+Chrome dev tool doesn't appear in electron

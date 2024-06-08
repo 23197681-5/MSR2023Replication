@@ -1,0 +1,1 @@
+Error when using vue j inside electron app

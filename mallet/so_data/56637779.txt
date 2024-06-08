@@ -1,0 +1,1 @@
+Build look different in machine that have same win10 o and 64 bit processor

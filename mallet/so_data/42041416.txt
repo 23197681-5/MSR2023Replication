@@ -1,0 +1,1 @@
+Redux performance with lot of change to the store every second

@@ -1,0 +1,1 @@
+Switch page without reload

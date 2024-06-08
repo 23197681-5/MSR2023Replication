@@ -1,0 +1,1 @@
+Electron desktopCapturer capture source from all desktops/workspaces

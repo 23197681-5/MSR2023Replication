@@ -1,0 +1,1 @@
+How do I correctly ship license with my desktop app?

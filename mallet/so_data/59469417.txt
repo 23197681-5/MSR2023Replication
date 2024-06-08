@@ -1,0 +1,1 @@
+access and package external file in an electron application

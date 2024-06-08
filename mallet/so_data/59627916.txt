@@ -1,0 +1,1 @@
+Changing backgroundImage cause memory leak (Electron)

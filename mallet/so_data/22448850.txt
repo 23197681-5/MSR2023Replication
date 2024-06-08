@@ -1,0 +1,1 @@
+Packaging npm module in node-webkit App

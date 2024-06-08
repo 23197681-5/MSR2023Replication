@@ -1,0 +1,1 @@
+Mutation payload change value by itself in vuex store mutation

@@ -1,0 +1,1 @@
+New window not able to ace NWJS modules?

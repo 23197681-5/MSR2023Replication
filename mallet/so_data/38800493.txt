@@ -1,0 +1,1 @@
+nedb: how to get doc out of find() function?

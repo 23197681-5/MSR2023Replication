@@ -1,0 +1,1 @@
+When closing a BrowserWindow in electron, event listener continue to reference the BrowserWindow

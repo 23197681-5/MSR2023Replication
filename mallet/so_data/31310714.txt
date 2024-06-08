@@ -1,0 +1,1 @@
+Debug node module in nwjs

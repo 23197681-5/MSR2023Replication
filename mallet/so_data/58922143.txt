@@ -1,0 +1,1 @@
+External webpack module for electron doe not work after building

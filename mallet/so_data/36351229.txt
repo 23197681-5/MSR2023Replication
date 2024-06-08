@@ -1,0 +1,1 @@
+how to unit test component in main process of an electron app?

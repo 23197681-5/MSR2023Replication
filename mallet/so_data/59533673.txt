@@ -1,0 +1,1 @@
+Electron-forge make my window setup file that run application but doe not install it

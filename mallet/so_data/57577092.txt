@@ -1,0 +1,1 @@
+setSinkId() function throw error in Electron App

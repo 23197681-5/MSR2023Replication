@@ -1,0 +1,1 @@
+Provide different Dock and Tray icon for Electron based App on Mac?

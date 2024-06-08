@@ -1,0 +1,6 @@
+12
+app
+twelve
+factor
+factors
+application

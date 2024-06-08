@@ -1,0 +1,1 @@
+Why doe electron unload some element who are on screen?

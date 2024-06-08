@@ -1,0 +1,1 @@
+electron Build window not getting full screen (workAreaSize,workArea,maximize) not working

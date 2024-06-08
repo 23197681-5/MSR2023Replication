@@ -1,0 +1,1 @@
+Where doe Electron save previous zoom?

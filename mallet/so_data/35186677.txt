@@ -1,0 +1,1 @@
+Multiple instance of Node Webkit (nwjs) share cooky

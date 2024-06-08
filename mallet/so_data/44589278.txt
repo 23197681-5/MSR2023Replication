@@ -1,0 +1,1 @@
+Closing all app window when using Electron

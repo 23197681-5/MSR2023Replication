@@ -1,0 +1,1 @@
+Electron app hang on quitting even though all quit event successfully fired

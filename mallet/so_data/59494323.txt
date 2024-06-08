@@ -1,0 +1,1 @@
+Electron interceptBufferProtocol proxying request doe not work

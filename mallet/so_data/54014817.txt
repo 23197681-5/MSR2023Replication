@@ -1,0 +1,1 @@
+Why doe my Electron app lag after building?

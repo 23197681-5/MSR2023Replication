@@ -1,0 +1,1 @@
+Can't access local file through f Electron+Browserify

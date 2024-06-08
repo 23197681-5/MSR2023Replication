@@ -1,0 +1,1 @@
+No extension in downloaded file via Electron using React

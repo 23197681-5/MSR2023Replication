@@ -1,0 +1,1 @@
+malihu custom scrollbar plugin doe not work with Electron.js

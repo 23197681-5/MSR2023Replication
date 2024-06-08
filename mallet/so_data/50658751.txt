@@ -1,0 +1,1 @@
+What HTML5 runtime environment (renderer shells) don't generate any background network I/O?

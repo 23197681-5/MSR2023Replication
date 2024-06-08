@@ -1,0 +1,1 @@
+Electron distribution build display a blank page

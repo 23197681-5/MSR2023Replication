@@ -1,0 +1,1 @@
+Building electron app break my angular 2 app

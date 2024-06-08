@@ -1,0 +1,1 @@
+How to navigate between file in electron with fixed navigation on left side?

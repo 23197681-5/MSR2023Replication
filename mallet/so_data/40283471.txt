@@ -1,0 +1,1 @@
+The electron render process get unresponsive when a heavy task run in the main process

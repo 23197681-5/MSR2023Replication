@@ -1,0 +1,1 @@
+Why can't I set global electron variable in my HTML for Typescript?

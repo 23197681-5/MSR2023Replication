@@ -1,0 +1,1 @@
+On clicking button to run function in Electron program, page content are cleared and function doe not run

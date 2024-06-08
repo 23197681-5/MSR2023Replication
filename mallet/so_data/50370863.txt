@@ -1,0 +1,1 @@
+ember-electron: Different asset compiled for ember and electron apps

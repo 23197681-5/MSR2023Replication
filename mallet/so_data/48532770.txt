@@ -1,0 +1,1 @@
+How can I call with native Swift method from Electron app using javascript?

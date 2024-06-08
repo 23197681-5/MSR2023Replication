@@ -1,0 +1,1 @@
+Dispose opened file in Textract?

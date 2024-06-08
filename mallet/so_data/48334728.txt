@@ -1,0 +1,1 @@
+xmlHttpRequest GET for responseType arraybuffer get empty response in electron

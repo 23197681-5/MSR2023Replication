@@ -1,0 +1,1 @@
+Electron custom `window.prompt()` (custom since prompt are not supported)

@@ -1,0 +1,1 @@
+How can I use 2 Electron window (Nightmare + Electron) at the same time?

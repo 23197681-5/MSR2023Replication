@@ -1,0 +1,1 @@
+Cannot use require in a separate j file in Electron

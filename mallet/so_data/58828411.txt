@@ -1,0 +1,1 @@
+Electron not being recognized globally Ubuntu window 10

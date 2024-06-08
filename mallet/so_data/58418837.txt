@@ -1,0 +1,1 @@
+Get Mac notification setting in Electron

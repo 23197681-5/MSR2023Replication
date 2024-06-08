@@ -1,0 +1,1 @@
+/).*/ wa unexpected at this time. When using electron-packager with ignore

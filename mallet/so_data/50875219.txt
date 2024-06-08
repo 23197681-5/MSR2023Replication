@@ -1,0 +1,1 @@
+Use simple j prompt with node to electron app

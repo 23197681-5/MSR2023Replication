@@ -1,0 +1,1 @@
+How and which database to use with NWjs offline window app to store data

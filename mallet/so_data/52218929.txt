@@ -1,0 +1,1 @@
+Is there a way to strip unused feature from electron.js binary

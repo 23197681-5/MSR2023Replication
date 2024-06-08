@@ -1,0 +1,1 @@
+AngularJs Bootstrap component in Electron application are flickering in compiled build

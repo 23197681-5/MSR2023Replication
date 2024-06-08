@@ -1,0 +1,1 @@
+Keyboard shortcut not working in contentEditable div in Electron application

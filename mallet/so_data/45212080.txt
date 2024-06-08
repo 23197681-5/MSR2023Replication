@@ -1,0 +1,1 @@
+socket.io native dependency issue with electron-forge and mac os-x

@@ -1,0 +1,1 @@
+How to recieve WebContent event from static page on Electron

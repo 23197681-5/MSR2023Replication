@@ -1,0 +1,1 @@
+Electron app issue: WSL command from Windows

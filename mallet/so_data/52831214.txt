@@ -1,0 +1,1 @@
+JavaScript: How get an access to the system window in OS Windows

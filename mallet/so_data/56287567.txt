@@ -1,0 +1,1 @@
+The script that is executed to copy the app resource to local machine doe not work

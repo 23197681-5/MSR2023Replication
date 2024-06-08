@@ -1,0 +1,1 @@
+Install Homebrew a a dependency in Electron through Child_Process

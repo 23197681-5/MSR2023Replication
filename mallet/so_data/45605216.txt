@@ -1,0 +1,1 @@
+JSON object architecture look different when I pas it to the client side

@@ -1,0 +1,1 @@
+electron-packager excludes .obj model file in built application

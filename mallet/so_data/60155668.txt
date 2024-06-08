@@ -1,0 +1,1 @@
+electron-forge, packaged application show blank screen

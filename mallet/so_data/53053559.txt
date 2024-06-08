@@ -1,0 +1,1 @@
+How do you pas sync query’s to SQL Server in nodejs?

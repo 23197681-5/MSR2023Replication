@@ -1,0 +1,1 @@
+How to immediately auto-run electron window app when someone closed it?

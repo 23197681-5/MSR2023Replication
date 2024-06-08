@@ -1,0 +1,1 @@
+Node j window child process on exit and close event

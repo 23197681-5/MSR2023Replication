@@ -1,0 +1,1 @@
+How to pas a variable from one HTML window to another in Electron?

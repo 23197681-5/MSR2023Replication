@@ -1,0 +1,1 @@
+Why are my value not updating on init (Angular + Electron)?

@@ -1,0 +1,1 @@
+Store an array of image path in indexedDB

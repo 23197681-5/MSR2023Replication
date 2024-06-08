@@ -1,0 +1,1 @@
+Launching Typescript app in Visual Studio Code throw error "Cannot find module 'electron'"

@@ -1,0 +1,1 @@
+Callback function working with promise but not observables

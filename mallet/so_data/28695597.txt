@@ -1,0 +1,1 @@
+Why doe node webkit crash when downloading a big file?

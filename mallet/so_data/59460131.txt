@@ -1,0 +1,1 @@
+Draggable and resizable div leaf a trail in electron frameless/transparent window

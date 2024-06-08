@@ -1,0 +1,1 @@
+Multiple Downloads freeze my app - vuejs, quasar, electron

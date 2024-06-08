@@ -1,0 +1,1 @@
+Calling app.quit() in electron app doe nothing in Windows (but work on Linux)

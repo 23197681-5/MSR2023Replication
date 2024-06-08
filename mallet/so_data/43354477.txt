@@ -1,0 +1,1 @@
+Get id's of multiple <span> element on selection? (React)

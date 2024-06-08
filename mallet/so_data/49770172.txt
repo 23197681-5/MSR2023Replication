@@ -1,0 +1,1 @@
+In Electron, using "typeof" cause TypeError: Cannot assign to read only property

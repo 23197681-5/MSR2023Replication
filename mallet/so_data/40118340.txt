@@ -1,0 +1,1 @@
+Packaged Electron app (.exe) crash silently, run fine via command line

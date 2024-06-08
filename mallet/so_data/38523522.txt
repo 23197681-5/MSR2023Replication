@@ -1,0 +1,1 @@
+Electron require module error for externally installed node module in renderer process

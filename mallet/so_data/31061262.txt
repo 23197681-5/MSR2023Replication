@@ -1,0 +1,1 @@
+Grouping child process in node-webkit or atom/electron

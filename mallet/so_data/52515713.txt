@@ -1,0 +1,1 @@
+How do i pas javascript variable to electron and manipulate it

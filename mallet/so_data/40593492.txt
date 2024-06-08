@@ -1,0 +1,1 @@
+Why won't `electron-packager` bundle node module that are listed in `package.json` a dependencies?

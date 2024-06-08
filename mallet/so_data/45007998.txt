@@ -1,0 +1,1 @@
+Can a child_process which wa forked be a parent and fork new process a well?

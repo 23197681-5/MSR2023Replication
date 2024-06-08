@@ -1,0 +1,1 @@
+why doe javascript `for` loop rapidly mute/unmute video

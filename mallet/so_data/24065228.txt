@@ -1,0 +1,1 @@
+Node-Webkit frameless app cover taskbar when maximized

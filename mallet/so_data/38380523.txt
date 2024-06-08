@@ -1,0 +1,1 @@
+Can native window be shown in Electron?

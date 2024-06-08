@@ -1,0 +1,1 @@
+map.on("click") event not getting triggered by screen touch

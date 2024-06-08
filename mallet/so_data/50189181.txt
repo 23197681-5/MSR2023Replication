@@ -1,0 +1,1 @@
+Build native module with electron-builder for different OS

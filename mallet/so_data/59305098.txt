@@ -1,0 +1,1 @@
+Managing multiple event emitter in Electron main

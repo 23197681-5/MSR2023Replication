@@ -1,0 +1,1 @@
+Electron remove top bar when packed

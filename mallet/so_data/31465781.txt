@@ -1,0 +1,1 @@
+Require and extend class in Electron, how to?

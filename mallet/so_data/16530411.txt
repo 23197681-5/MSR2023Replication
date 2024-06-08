@@ -1,0 +1,1 @@
+Storing file locally in Node Webkit App

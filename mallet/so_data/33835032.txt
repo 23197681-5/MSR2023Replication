@@ -1,0 +1,1 @@
+BrowserWindow doesn’t open an http page without ignore-certificate-errors

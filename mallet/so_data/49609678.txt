@@ -1,0 +1,1 @@
+How can I add DevTools extension to the Atom editor?

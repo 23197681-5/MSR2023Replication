@@ -1,0 +1,1 @@
+sqlite3 node j insert into multiple table

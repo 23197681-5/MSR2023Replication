@@ -1,0 +1,1 @@
+Executing command 'ADB devices' on electron j in cmd line using exec()

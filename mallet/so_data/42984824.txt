@@ -1,0 +1,1 @@
+window installer error when specifying "setupIcon"

@@ -1,0 +1,1 @@
+Using NODE_PATH in electron to map folder inside src/ a module

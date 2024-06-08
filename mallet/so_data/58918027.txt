@@ -1,0 +1,1 @@
+electron-winstaller throw The system cannot find the path specified. at Squirrel.Utility.<CreateZipFromDirectory>d__23.MoveNext()<---

@@ -1,0 +1,1 @@
+electron autoUpdater return empty error on mac on setFeedURL

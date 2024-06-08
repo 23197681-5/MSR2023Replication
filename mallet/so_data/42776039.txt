@@ -1,0 +1,1 @@
+Why doe Electron/React app freeze and without sending error to the log?

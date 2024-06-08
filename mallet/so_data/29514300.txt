@@ -1,0 +1,1 @@
+node webkit- catch iframe mouse event from parent window

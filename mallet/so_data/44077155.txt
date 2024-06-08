@@ -1,0 +1,1 @@
+NodeJS Ajax request working exactly seven time

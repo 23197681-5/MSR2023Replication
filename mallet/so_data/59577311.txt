@@ -1,0 +1,1 @@
+how to get exe file using fs.readdirsync() in electron j

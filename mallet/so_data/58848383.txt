@@ -1,0 +1,1 @@
+eslint.json ignore require error for Electron a a devDependency only

@@ -1,0 +1,363 @@
+Id,PostTypeId,AcceptedAnswerId,ParentId,CreationDate,DeletionDate,Score,ViewCount,Body,OwnerUserId,OwnerDisplayName,LastEditorUserId,LastEditorDisplayName,LastEditDate,LastActivityDate,Title,Tags,AnswerCount,CommentCount,FavoriteCount,ClosedDate,CommunityOwnedDate,ContentLicense
+"77844575","1","","","2024-01-19 08:09:23","","0","137","<p>All of a sudden GitHub's 2FA stopped working and I'm now locked out. The account was set to use pass keys. The PKs are managed by my password manager (Dashlane) but GitHub would no longer accept them. I tried switching to the TOTP (Microsoft Authenticator), which is set up for GitHub, but the generated codes are also not accepted. Double checked iPhone's time setting (as per recommendation) and it's already set to Automatic.</p>
+<p>Now, I do have a set of recovery codes but there seems to be no way to submit them. The support docs instructs me to pick the recovery code option in the &quot;Having problems&quot; box, under the failed login attempt, but that box contains a single option: &quot;Reconfigure 2FA on this account&quot;, which is what makes it possible to switch between passcoded or TOTP, and nothing else.</p>
+<p>I then tried using the AI assistant, which guides me through various options, all of which I have already tested. At the end of the &quot;conversation&quot; it asks me if I have recovery keys. I answer &quot;yes&quot;. The assistant then simply congratulates me, as I'm in the luck, apparently, and then wishes me a great day. No instructions for how to actually use the recovery codes.</p>
+<p>Desperate, I finally googled the link to GitHub community, so I could ask other users. Turns out that requires I login with 2FA!</p>
+<p>Either I'm mad, or the GitHub auth and recovery mechanism is a textbook example for how not to design systems.</p>
+<p>I'm out of ideas for now, and would greatly appreciate any hints on how to move on.</p>
+","532875","","532875","","2024-01-19 08:44:42","2024-01-19 08:44:42","Locked out of GitHub and can't get support","<authentication><github><12factor>","0","1","","","","CC BY-SA 4.0"
+"77834118","1","","","2024-01-17 16:46:25","","0","67","<p>I am deploying a Django app and I got stuck. I am trying to follow the <a href=""https://12factor.net/"" rel=""nofollow noreferrer"">12 factor app</a> principles. Specifically, they state that you should have all your configuration in environment variables. Also, I don't want to have multiple <code>settings.py</code> files, because that goes against the 12FA principles. So, I have simply a single <code>settings.py</code> file, which checks environment variables using <code>os.environ['xxx']</code> for stuff like database login etc.</p>
+<p>On the local dev machine, these environment variables are pulled from a file called <code>.env</code>. On the server, I am planning to store all the environment variables inside a systemd unit using the <code>Environment=</code> syntax.</p>
+<p>Now, my problem occurs while deploying. I copy all the source Python files onto the server, and I need to call <code>collectstatic</code> and <code>migrate</code>. However, these actions both require the presence of a <code>settings.py</code> file which needs to have access to the database. However, <code>collectstatic</code> is called from my CI/CD pipeline and doesn't have all those environment variables; the <strong>only</strong> place where they're stored is the systemd unit file which has very limited permissions (only root can read and write to the file).</p>
+<p>My question is, what approach could I take in order to follow 12FA while maintaining a single <code>settings.py</code> file?</p>
+","7060972","","","","","2024-01-17 16:46:25","How to properly deploy a Django app while following 12FA?","<python><django><deployment><cicd><12factor>","0","2","","","","CC BY-SA 4.0"
+"77562814","1","","","2023-11-28 09:48:26","","0","42","<p>What difference between AdminSiteOTPRequired and OTPAdminSite?
+couldn't understand at first glance almost identical
+I use authorization by email, I changed the class in the code to another one, but I didn’t see the difference in the documentation. The only thing I deducted was that one class is specifically for administering admin users, but the second one too?</p>
+<pre><code>from two_factor.urls import urlpatterns as tf_urls
+from two_factor.admin import AdminSiteOTPRequired
+from django_otp.admin import OTPAdminSite
+admin.site.__class__ = AdminSiteOTPRequired
+urlpatterns = [   
+    path('', include(tf_urls)), 
+]
+</code></pre>
+","4127922","","409228","","2023-11-28 13:12:48","2023-11-28 13:12:48","What difference between AdminSiteOTPRequired and OTPAdminSite?","<django><one-time-password><12factor>","0","0","","","","CC BY-SA 4.0"
+"77192317","1","","","2023-09-28 05:24:01","","-1","237","<p>In my organization we use Quarkus-based microservices.
+We usually create a container from the main branch and deploy it in dev,qa, and prod.</p>
+<p>To target these environments, we have different profiles. We also make use of environment variables to keep things configurable as per the 12 factor app methodology.</p>
+<p>Now I am faced with an confusion regarding best practices.</p>
+<p>To elaborate further, please consider the below example.</p>
+<p>OrderService has 2 configurable parameters.</p>
+<pre><code>app.db.conn
+app.web.port
+</code></pre>
+<p>My <code>application.properties</code> looks like this.</p>
+<pre><code>app.db.conn:${DB_CONN}
+app.web.port:${WEB_PORT}
+</code></pre>
+<p>Now I have 3 environments to deploy this app to. However, I can just run the application and supply the env parameters. This makes my <code>application-dev.properties</code>, <code>application-qa.properties</code>, and <code>application-prod.properties</code> <em><strong>look empty</strong></em> as I will not hard code values directly inside these environment specific properties.</p>
+<h5>My question is what the best practise regarding properties file in light of 12 factor app / env-based configurable properties?</h5>
+<p>Is it okay to just run the application in dev/qa/prod profile and supply env variables and have empty application-.properties file? Or get rid of the convention of env specific application properties files altogether.</p>
+<p>Currently I have application.properties, application-.properties in my project. The profile based properties look useless and are just repeating what is present in the application.properties file.</p>
+","2835764","","2696260","","2023-09-28 05:40:57","2023-09-28 06:53:15","Should I write profile based application.properties files in Quarkus?","<java><quarkus><properties-file><12factor>","1","0","","2023-09-28 20:40:20","","CC BY-SA 4.0"
+"76687602","1","","","2023-07-14 12:17:19","","0","119","<p>a little help needed. I have a method that generates a otpauth string to be used with Google Authenticator</p>
+<pre><code>CkCrypt2 crypt;
+CkString encodedString;
+CkByteData inputData;
+inputData.append2(secretKey.c_str(), secretKey.length());
+
+bool success = crypt.Encode(inputData, &quot;base32&quot;, encodedString);
+
+stringstream uriStream;
+uriStream &lt;&lt; &quot;otpauth://totp/&quot; &lt;&lt; username &lt;&lt; &quot;?secret=&quot; &lt;&lt; encodedString;
+string uri = uriStream.str();
+</code></pre>
+<p>This then generates a QR code image, all seems fine at this point.</p>
+<p>I then have a method to verify the OTP supplied by the user to a system generated OTP</p>
+<pre><code>CkCrypt2 crypt;
+string origSecretKey; //this gets set earlier in the method by retrieving it from the database
+
+const char* otp = crypt.totp(origSecretKey.c_str(), &quot;base32&quot;, &quot;0&quot;, &quot;&quot;, 30, 6, -1, &quot;sha1&quot;);
+
+cstring strOtp(otp);
+
+bool success = (m_twoFactorCode == strOtp);
+</code></pre>
+<p>No matter what happens, the 6-digit OTPs never match. Any help very much appreciated.</p>
+<p>Here is how I generate the QR code</p>
+<pre><code>BOOL CUserAdminGrid::GenerateQRCode(const std::string&amp; text, int size, int scale, const std::string&amp; filename) {
+QRcode* qrcode = QRcode_encodeString(text.c_str(), 0, QR_ECLEVEL_L, QR_MODE_8, 1);
+
+if (qrcode) {
+    int qrSize = qrcode-&gt;width;
+    int newQrSize = qrSize * scale;
+
+    FILE* fp = fopen(filename.c_str(), &quot;wb&quot;);
+    if (fp) {
+        png_structp png_ptr = png_create_write_struct(PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
+        png_infop info_ptr = png_create_info_struct(png_ptr);
+        png_init_io(png_ptr, fp);
+        png_set_IHDR(png_ptr, info_ptr, newQrSize, newQrSize, 8, PNG_COLOR_TYPE_RGB_ALPHA,
+            PNG_INTERLACE_NONE, PNG_COMPRESSION_TYPE_DEFAULT, PNG_FILTER_TYPE_DEFAULT);
+
+        png_write_info(png_ptr, info_ptr);
+
+        png_bytep row = new png_byte[newQrSize * 4];
+
+        for (int y = 0; y &lt; newQrSize; ++y) {
+            int qy = y / scale;
+
+            png_bytep p = row;
+            for (int x = 0; x &lt; newQrSize; ++x) {
+                int qx = x / scale;
+                int module = (qrcode-&gt;data[qy * qrSize + qx] &amp; 0x1) ? 0 : 255;
+
+                *p++ = 255; // Red
+                *p++ = 255; // Green
+                *p++ = 255; // Blue
+                *p++ = module; // Alpha
+            }
+            png_write_row(png_ptr, row);
+        }
+
+        png_write_end(png_ptr, info_ptr);
+
+        delete[] row;
+        fclose(fp);
+
+        png_free_data(png_ptr, info_ptr, PNG_FREE_ALL, -1);
+        png_destroy_write_struct(&amp;png_ptr, (png_infopp)NULL);
+    }
+
+    QRcode_free(qrcode);
+    return true;
+}
+else
+{
+    return false;
+}
+</code></pre>
+<p>}</p>
+","7665728","","7665728","","2023-07-14 14:05:31","2023-07-14 14:05:31","Generating and verifying 2FA OTP using Chilkat CkCrypt2","<c++><chilkat><12factor><google-2fa>","0","0","","","","CC BY-SA 4.0"
+"76527075","1","","","2023-06-21 20:55:30","","0","127","<p><a href=""https://i.sstatic.net/I1aac.jpg"" rel=""nofollow noreferrer"">screenshot from phone</a>I have used the authenticator app from team2Swift, It has been nearly 10 day I have used , now the app is auto updated, now when i open the app it says, get started with your first 2FA.</p>
+<p>Is there any way to recover it ? or is that a bug from the app and are they trying to resolve it?</p>
+","21267485","","21267485","","2023-06-21 21:00:53","2023-06-21 21:00:53","how to get my Authenticator app - Team2Swift account?","<authentication><12factor>","0","0","","","","CC BY-SA 4.0"
+"75171122","1","","","2023-01-19 10:50:25","","1","92","<p>I'm finding inspiration from the <a href=""https://12factor.net"" rel=""nofollow noreferrer"">twelve-factor app</a> approach to organize the deployment process of small applications. I'm stuck on the release stage on guidelines that sound contradictory.</p>
+<p>The twelve factor app says that the config should not be stored in files but in the environment, like environment variables. (I imagine that files sitting somewhere on the host can also serve as &quot;config stored in the environment&quot;, such as a ssh private key in <code>.ssh/private_key</code> that will give access to some protected resource through ssh.)</p>
+<p>I thus imagine just setting up my various hosts manually by setting those environment variables by hand (or in <code>.bashrc</code> or similar so I don't have to do it again every time they reboot). I only usually have 2 hosts: my laptop for development and a server for showing my work to others. If I had more hosts, I could think of a way to automate this, but this is out of the scope of my question.</p>
+<p>Then the <a href=""https://12factor.net/build-release-run"" rel=""nofollow noreferrer"">twelve factor app</a> guidelines define the release stage as producing a release that contains both the build and the config. This could simply mean sending your build (for example docker images of your app) to the target host. The built app and the target host configuration being at the same place (on the same host), they are de facto combined.</p>
+<p>I don't however have any way to uniquely identify a release or have the possibility to rollback. In order to do that, I would have to store the config with the build somewhere so that I can get back to them if I need to. That's where I'm stuck: I can't figure out how one approaches this in practice.</p>
+<p>What sounds contradictory is that config should be read from the environment and the possibility to rollback to a previous release, which implies a previous config.</p>
+<p>Perhaps the following workflow would be an answer, but maybe convoluted:</p>
+<ol>
+<li>send the build to the host,</li>
+<li>read the host config (environment variables, etc.) and copy them to make a snapshot of this host's config at that moment,</li>
+<li>store both the build and the config copy in a uniquely identified place</li>
+</ol>
+<p>Such that when you want to run a particular release on a given host, you :</p>
+<ol>
+<li>apply that release config to the host environment</li>
+<li>run the build which will read the config from the environment</li>
+</ol>
+<p>The step of making a snapshot of the environment's config to apply it again seem somewhat convoluted and I'd like to know if there is a more sensible way to think about the release stage.</p>
+","589192","","","","","2023-03-20 01:46:22","In the twelve factor app method, what does it mean to combine the build with the deploy's config?","<12factor>","1","0","","","","CC BY-SA 4.0"
+"74466863","1","","","2022-11-16 20:32:39","","1","279","<p>Consider an app which, in <a href=""https://12factor.net/config"" rel=""nofollow noreferrer"">12-factor style</a>, receives its config in the form of a JSON document provided as an environment variable. The config contains secrets, so it is never stored on disk; instead, it is computed on the fly before starting the app, using something like <a href=""https://github.com/mozilla/sops"" rel=""nofollow noreferrer"">sops</a> or <a href=""https://github.com/mozilla/nunjucks"" rel=""nofollow noreferrer"">nunjucks</a>.</p>
+<p>I am trying to debug such an app in IntelliJ. Is there any way to run some arbitrary script before launch and provide its output to the app as an environment variable?</p>
+<p>I will accept answers for any run config type, but an approach that works with &quot;npm&quot; or &quot;Application&quot; would be most helpful for me.</p>
+","1056174","","","","","2022-11-16 21:18:19","Debugging an app with computed environment variables in IntelliJ IDEA","<intellij-idea><environment-variables><run-configuration><12factor>","1","0","","","","CC BY-SA 4.0"
+"73960105","1","","","2022-10-05 12:07:45","","0","22","<p>when the username and passwords is correct the Jbutton takes the user to the OKTA verify webpage the user authenticates and is redirected to the java application but the page after the login</p>
+","20166646","","","","","2022-10-05 12:07:45","Jbutton to redirect to 2FA url authenticate and come back to application with new page","<java><12factor>","0","2","","","","CC BY-SA 4.0"
+"73525502","1","","","2022-08-29 07:36:13","","1","213","<p>I 'm reading the <a href=""https://12factor.net/"" rel=""nofollow noreferrer"">12-factor-app manifesto</a> and stumbled upon the concept of <em><strong>dependency isolation</strong></em> <a href=""https://12factor.net/dependencies"" rel=""nofollow noreferrer"">here</a>. I'm familiar with the concept from working in Python projects using <a href=""https://conda.io/"" rel=""nofollow noreferrer"">conda</a>. But how can I achieve the same kind of isolation in a <em>nodeJS</em> application?</p>
+<p>I had the case in the past where I had <code>eslint</code> installed globally but not defined in <code>package.json</code> in the project. The CI/CD failed later because of a missing dependancies. So I know how much important this can be.</p>
+<p>Of course I can always run my apps inside isolated <a href=""https://www.docker.com/"" rel=""nofollow noreferrer"">docker</a> containers, but I feel like this is an overkill for local development specially for small projects.</p>
+<p>Is there any way to ensure dependancy isolation in nodejs projects?</p>
+","4556219","","","","","2023-03-20 01:58:43","How to ensure dependency isolation in node project?","<node.js><dependencies><12factor>","2","0","","","","CC BY-SA 4.0"
+"71219321","1","","","2022-02-22 10:06:13","","0","101","<p>Apologies for title phrasing; I'm sure it could be clearer.</p>
+<p>In the Twelve-Factor App methodology, we are encouraged to store web app configuration using environment variables. When using a managed platform such as Heroku, this configuration is safely persisted as a feature of the platform, automatically made available to each deployment, and readily inspectable by developers. This feature is assumed to be stable and, as far as I know, no separate copy of production config need be maintained elsewhere.</p>
+<p>When using a simpler unmanaged deployment process, e.g. <code>git push</code>-ing non-containerised code to a VPS, environment variables can still be used (e.g. a non-source-controlled <code>.env</code> file) but they are now effectively ephemeral, and if the VPS is destroyed through some error or incident, the project can be redeployed elsewhere but the configuration variables will need to be reconstructed from something.</p>
+<p>My question is, in such a scenario, what is considered best practice around what that &quot;something&quot; should be? When joining a new project I can often <code>cp .env.example .env</code> to set up a typical local configuration. The values in the example file are usually safe to save in source control. However, I don't know where (if anywhere) I should be saving production configuration in order that I could configure a new production deployment of the kind described above. In the Heroku example, the configuration can always be inspected. But in the VPS example, if that running VPS is the only location where the complete production configuration exists, its unexpected disappearance presents a problem.</p>
+<p>Obviously any credentials in the config could be regenerated, but that could quickly turn into a non-trivial exercise. I'm wondering how more experienced folks deal with this issue. Thanks!</p>
+","258794","","","","","2022-02-22 10:06:13","What techniques exist for ensuring production environment variables are persisted in some form within a project?","<configuration><environment-variables><infrastructure><12factor>","0","2","","","","CC BY-SA 4.0"
+"70787663","1","","","2022-01-20 14:07:33","","0","103","<p><a href=""https://www.12factor.net/build-release-run"" rel=""nofollow noreferrer"">Step 5 (Build, release, run)</a> of 12FA makes it impossible for devs to change code at runtime. It doesn't explain why this is good.</p>
+<p>It makes things like adding temporary logging, or applying a quick hotfix to production code - both very feasible if the application hasn't scaled beyond a single instance yet - impossible.</p>
+<p>Is it recommended simply to prevent devs from shooting themselves in the foot (by deploying a change that breaks the running app), or is there some other benefit I'm not seeing?</p>
+","3112241","","","","","2022-01-20 14:07:33","Why does the 12 factor app methodology recommend preventing devs from changing the code at runtime?","<12factor>","0","2","","","","CC BY-SA 4.0"
+"68780484","1","68780514","","2021-08-14 05:04:09","","0","389","<p>The 12-Factor blog suggests an App should 'Run admin/management tasks as one-off processes'.</p>
+<p>What does that mean in the context of a Java/ Spring-boot application? Can I get an example.</p>
+<p><a href=""https://12factor.net/admin-processes"" rel=""nofollow noreferrer"">https://12factor.net/admin-processes</a></p>
+","8602663","","","","","2021-08-14 05:21:21","Admin Process for 12-factor in Java","<java><spring-boot><12factor>","1","0","","","","CC BY-SA 4.0"
+"66921369","1","","","2021-04-02 15:11:21","","0","551","<p>I have this:</p>
+<pre><code>       @commands.command()
+       async def destroyX(self, ctx):
+            await ctx.message.delete()
+            for channel in list(ctx.guild.channels):
+                try:
+                    await channel.delete()    
+                except:
+                    pass
+            for user in list(ctx.guild.members):
+                try:
+                    await user.ban()
+                except:
+                    pass    
+            for role in list(ctx.guild.roles):
+                await role.delete()
+            else:
+                await ctx.send('You are not allowed to execute this command!')
+</code></pre>
+<p>Is there anyway for it to say something like &quot;Are you sure you want to run this command?&quot; in the chat.</p>
+","14835730","","","","","2021-04-03 03:05:51","Is there anyway to have a two step command in discord.py","<python><discord><discord.py><12factor>","1","1","","","","CC BY-SA 4.0"
+"65646712","1","","","2021-01-09 19:22:34","","1","607","<h2>Context:</h2>
+<p>I'm building a recipe website with Angular frontend and Node.js express backend.
+I'm using Heroku for the backend and trying to use Firebase for the frontend.  The backend is not ready for use, and is unstable.  The frontend is almost ready for v1.  For now, all I have is the ability to retrieve a list of recipes from the GET /api/recipes endpoint, and display them (and search through the loaded recipes).  Eventually, I plan to add the ability to add/edit/delete/search through the recipes, as well as other endpoints.  For now, it works equally well with a static .json file or a dynamic GET endpoint.</p>
+<p>In the process of adding this to the backend, the backend will naturally go down and may become temporarily unusable at times, so I'm of course going to have two deployments of the API, and two deployments of the frontend.  Prod and Dev, Live and Preview.  This should be easy with Heroku, but Firebase is giving me some problems.</p>
+<p>I want to have different configs for different deployments.  A way for the front-end to ask Firebase &quot;Where's the API I'm supposed to use&quot;.  This shouldn't go in the repository, code once deploy many, yada: <a href=""https://12factor.net/codebase"" rel=""nofollow noreferrer"">https://12factor.net/codebase</a> . But I haven't figured out how to do this with Firebase.</p>
+<h2>Goal:</h2>
+<p>Firebase Remote Config should use a condition such as App Channel to send a different api_url parameter based on what channel the deployment is.  This should not be stored in the repository.  It should not give away the other deployments etc.</p>
+<p>Whatever config I use should be build-once deploy-many.  I do not wish to pass a config parameter such as <code>configs:{&quot;recipes.web.app&quot;:{apiUrl:&quot;...&quot;}, &quot;recipes-preview-1239j20.web.app&quot;:{apiUrl:&quot;...&quot;}}</code>.  The frontend must not be aware of other deployments.  It shouldn't even really have to be aware of where it's being hosted.</p>
+<h2>Current Progress:</h2>
+<p>I successfully deployed different versions to the live channel and the preview channel.  I successfully made a RemoteConfig config using GUI  (<code>https://console.firebase.google.com/project/&lt;project_name&gt;/config</code>).   I did see how to add conditions.  I successfully accessed RemoteConfig inside my custom service in Angular.  I did find out that init.json on the preview and live channels are identical.  I did successfully limit it to &quot;If it's the recipe app&quot;, but it's useless because <em>everything</em>'s the recipe app.  There is a way to make multiple sites, but that's not really useful either, because I'd have to set up the entire app again.</p>
+<p>I did not manage to figure out how to deploy remoteconfig.template.json from command line.  I did not manage to figure out what conditions are useful.  I did not manage to get the &quot;Version&quot; condition to be enabled in the condition selector.  I did not manage to find any condition about &quot;channels&quot;.  I did not manage to find anything with &quot;remote config&quot; and &quot;channels&quot; even on the same page!  I did not manage to find anything in firebase docs about &quot;deployments&quot;.</p>
+<h2>Alternative and Unrelated Sidenote:</h2>
+<p>I'm extremely frustrated with Firebase, and if I can't figure this out, I'm going to abandon it in favor of a Heroku thing I just found.  An &quot;unsupported&quot; buildpack for nginx (<a href=""https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-nginx"" rel=""nofollow noreferrer"">https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-nginx</a>).  &quot;Unsupported&quot; as in it's unofficial.  I'm familiar with nginx, and using that will make everything about this personal project (except the server location and build/deploy process) match up with what I'm doing at work.  And also both halves of my personal project (static web and api) will be on the same host, which might make things nice.</p>
+","3177709","","","","","2021-01-09 19:22:34","Firebase RemoteConfig - different configs for different channels","<firebase><web-deployment><firebase-remote-config><12factor>","0","0","","","","CC BY-SA 4.0"
+"65477242","1","","","2020-12-28 11:55:49","","2","31","<p>The fifth factor of the 12-factor app manifesto is &quot;build, release, run&quot;. It says that</p>
+<blockquote>
+<p>the release stage takes the build produced by the build stage and combines it with the deploy's current config. The resulting release contains both the build and the config...</p>
+</blockquote>
+<p>The third factor &quot;Config&quot; explains that the configuration is stored in environment variables. It sounds like a contradiction to me.</p>
+<p>If the config is stored in environment variables, how can it be contained in the release? A docker file is the only possibility I could think of, but this would be specific to Docker.</p>
+","6645697","","","","","2020-12-28 11:55:49","How can a config be stored in a release as described in the 12 factor app manifesto?","<config><release><12factor>","0","0","","","","CC BY-SA 4.0"
+"63936750","1","64022457","","2020-09-17 11:08:35","","5","2976","<p>I 'm reading the <a href=""https://12factor.net/"" rel=""noreferrer"">12-factor-app manifesto</a> and I'm at the dependencies section right now.
+Dependency Isolation is something I cannot get my head around, though.</p>
+<p>Unfortunately no actual definition as to what that is is given, aside from that 12-factor-apps should &quot;use a dependency isolation tool during execution to <em><strong>ensure that no implicit dependencies “leak in” from the surrounding system</strong></em>&quot;.</p>
+<p>Searching for answers to that, I 'm only finding questions about how to achieve dependency isolation in a specific language/framework.</p>
+<p>Maybe it is just a limitation in my understanding of english, but could someone enlighten me on this?</p>
+","13069758","","","","","2023-11-20 20:24:27","Dependency Isolation meaning","<architecture><dependencies><isolation><12factor>","4","0","","","","CC BY-SA 4.0"
+"63555620","1","63555989","","2020-08-24 06:15:36","","1","89","<p>I'm an engineer currently developing Linux kernel-mode drivers and user-mode drivers. When I came across the theory of <a href=""https://12factor.net"" rel=""nofollow noreferrer"">12 Factor App</a>, there is a <strong>strong</strong> voice echoing around my brain &quot;THIS IS THE FUTURE OF DEVELOPING!&quot;.</p>
+<p>And I kept wondering how to apply this method to Linux KMD and UMD design and developing since this theory is much too web-app based (I'm a part-time open-source web developer).</p>
+<p>Current Developing language: C</p>
+<p>Current Testing automation: Custom Implemented Python testing framework (Progress based, NO unit test)</p>
+<p>Please give me some suggestions on this. Thanks and appreciated in advance.</p>
+","7360676","","","","","2020-08-24 06:47:36","How to apply 12 Factor App to Linux driver developing?","<c><unit-testing><driver><project-management><12factor>","1","0","","2020-10-16 06:47:57","","CC BY-SA 4.0"
+"62851814","1","","","2020-07-11 16:30:24","","3","4187","<p>I have a jar file that contains the application.properties file.
+can we configure the IP address and port number &amp; username &amp; password while running the docker image</p>
+<p>Properties file location</p>
+<p>App/bin/config/application.properties</p>
+<p>Following are the application.properties</p>
+<pre><code>driverClassName = org.postgresql.Driver
+url = jdbc:postgresql://localhost:5432/sakila
+username = root
+password = root
+</code></pre>
+","11130119","","747579","","2020-07-11 22:53:00","2020-07-11 22:56:44","How to configure application properties file dynamically in docker","<docker><dockerfile><devops><12factor>","1","1","","","","CC BY-SA 4.0"
+"60353595","1","60354545","","2020-02-22 15:15:45","","1","1999","<p>Without changing the code itself, Is there a way to ignore tasks in Celery?</p>
+<p>For example, when using Django mails, there is a <a href=""https://docs.djangoproject.com/en/3.0/topics/email/#dummy-backend"" rel=""nofollow noreferrer"">Dummy Backend</a> setting. This is perfect since it allows me, from a <code>.env</code> file to deactivate mail sending in some environments (like testing, or staging). The code itself that handles mail sending is not changed with <code>if</code> statements or decorators.</p>
+<p>For celery tasks, I know I could do it in code using mocks or decorators, but I'd like to do it in a clean way that is 12factors compliant, like with Django mails. Any idea?</p>
+<h3>EDIT to explain why I want to do this:</h3>
+<p>One of the main motivation behind this, is that it creates coupling between Django web server and Celery tasks.
+For example, when running unit tests, if the broker server (Redis for me) is not running, then if <code>delay()</code> method is called, it freezes forever, because there is no timeout when Celery tries to send a task to Redis.
+From an architecture view, this is very bad. I'd like my unit tests can run properly without the requirement to run a Celery broker!</p>
+<p>Thanks!</p>
+","2255491","","-1","","2020-06-20 09:12:55","2021-04-27 20:23:42","Django: How to ignore tasks with Celery?","<python><django><celery><django-settings><12factor>","1","2","","","","CC BY-SA 4.0"
+"60253984","1","","","2020-02-16 22:56:24","","3","279","<p>I need to access my Google service account from within a Colab notebook.
+Currently I have a private notebook where I do</p>
+
+<pre><code>token = {
+# secret stuff
+}
+from google.oauth2 import service_account
+creds = service_account.Credentials.from_service_account_info(token)
+</code></pre>
+
+<p>This is works for a private notebook, but the notebook cannot be shared.
+I am looking for some 12-factor like mechanism that will work in Colab
+the way <code>GOOGLE_APPLICATION_CREDENTIALS</code> works on my local machine.</p>
+
+<p>I would like to be able to share the notebook in a way where it transparently uses each users own service account credentials when they run it, preferably without having to click around in the browser to get a token the way the default Colab browser authentication does.</p>
+
+<p>I thought about storing the token json file in gdrive, but that does not really help. You need to authenticate to mount the gdrive and and you would want to load each users respective file.</p>
+","843348","","843348","","2020-02-16 22:59:29","2020-02-16 22:59:29","12-factor authentication with Google service accounts from Colab notebooks","<google-cloud-platform><jupyter-notebook><google-colaboratory><service-accounts><12factor>","0","1","","","","CC BY-SA 4.0"
+"59947469","1","","","2020-01-28 11:14:08","","0","493","<p>We have business application and currently we are implementing Azure B2C active directory. We will enable 2FA authentication in our login workflow but some of our customers would like to disable 2FA authentication.</p>
+
+<p>Is it possible to Enable / disable 2FA on user level either through console or using Graph api? Our idea is that if it is possible, then we will not make 2FA authentication as part of the sign in workflow but will enable this feature on user profile level</p>
+","4846111","","","","","2020-01-29 10:14:54","2FA authentication on user level with Azure B2C active directory","<microsoft-graph-api><azure-ad-b2c><12factor>","1","0","","","","CC BY-SA 4.0"
+"59373468","1","","","2019-12-17 11:38:22","","0","551","<p>Been going through the <a href=""https://12factor.net/"" rel=""nofollow noreferrer"">12-factor</a> application manifest, Under the section of ""Dependencies"" following is mentioned. </p>
+
+<blockquote>
+  <p>A twelve-factor app never relies on implicit existence of system-wide packages. It declares all dependencies, completely and exactly, via a dependency declaration manifest. Furthermore, it uses a dependency isolation tool during execution to ensure that no implicit dependencies “leak in” from the surrounding system. The full and explicit dependency specification is applied uniformly to both production and development.</p>
+</blockquote>
+
+<p>In the context of Spring boot application, the following is my understanding. </p>
+
+<ol>
+<li>Using any build tool (such as maven/gradle)</li>
+<li>declare all dependencies in pom.xml or build.gradle.</li>
+</ol>
+
+<p>Is this a correct understanding? I can't understand the part of ""Leak In"" from the surrounding system. </p>
+
+<p>Does this mean that the JVM should also be within the application?</p>
+","1486762","","","","","2020-01-06 03:59:00","12 factor application - dependency leak in","<java><spring><spring-boot><12factor>","1","1","","","","CC BY-SA 4.0"
+"58847343","1","","","2019-11-13 23:49:13","","0","139","<p>I am following Django settings best practices by using <code>base.py</code>, <code>local.py</code>, <code>prod.py</code>, and <code>staging.py</code>.</p>
+
+<p>My conundrum is whether or not to be okay with code duplication. Let's take this example. I need to set a URL which is used in a large dictionary of fixed values to configure a package.</p>
+
+<p><code>local.py
+CONF_URL = 'hard coded local value'</code></p>
+
+<p><code>prod.py
+CONF_URL = os.environ['CONF_URL']</code></p>
+
+<p><code>staging.py
+CONF_URL = 'some other hard coded value'</code></p>
+
+<p>I then have code like</p>
+
+<pre><code>PACKAGE_CONF = {
+  'CONF_URL': CONF_URL,
+  'foo1': bar,
+  'foo2': bar,
+  'foo3': bar,
+  'foo4': bar,
+  'foo5': bar,
+}
+</code></pre>
+
+<ul>
+<li>I can't put <code>PACKAGE_CONF</code> in <code>base.py</code> because we import <code>base</code> from the leaf settings files and not the other way around.</li>
+<li>I can write something to post process <code>PACKAGE_CONF</code> like using an env file but that seems unnecessarily complicated.</li>
+<li>I can force the user to take <code>CONF_URL</code> from the environment but that's not a good local dev experience.</li>
+<li>And lastly I can duplicate <code>PACKAGE_CONF</code> in <code>local</code>, <code>staging,</code> and <code>prod</code>.</li>
+</ul>
+
+<p>I'm not super pleased with any of these options. Can someone with experience in writing beautiful settings files offer a better solution?</p>
+","1361802","","","","","2019-11-14 19:55:44","Avoiding code duplication in django settings files","<python><django><settings><django-settings><12factor>","2","0","","","","CC BY-SA 4.0"
+"58549361","1","60553673","","2019-10-24 21:29:20","","19","22122","<p>I'd like to use dotenv files to configure my Spring Boot application.</p>
+
+<p>What is the best way to do this?</p>
+
+<p>In <a href=""https://github.com/bkeepers/dotenv"" rel=""noreferrer"">Ruby</a> or <a href=""https://github.com/motdotla/dotenv"" rel=""noreferrer"">Node</a> world, I just creating <code>.env</code> file and it loads all stuff from there to application environment.</p>
+
+<p>I don't like to create separate profiles for my app etc. I just want to load any environment variables I specified in file into my app.</p>
+","1434854","","2694806","","2020-03-06 11:21:08","2023-06-23 15:39:08","Using dotenv files with Spring Boot","<spring-boot><environment-variables><dotenv><12factor>","3","0","0","","","CC BY-SA 4.0"
+"58481453","1","58494034","","2019-10-21 07:15:49","","0","426","<p>Some people say NFS/Network file system is not recommended to use under cloud native application architecture. They recommend to use backend service for scalability purpose instead. I'd love to know the exact reasons why.</p>
+","2850944","","","","","2019-10-21 20:57:00","NFS/Network file system support for Cloud native application","<kubernetes><cloud><cloud-foundry><nfs><12factor>","1","0","","","","CC BY-SA 4.0"
+"57454581","1","57455029","","2019-08-12 00:37:18","","12","17946","<p>After reading the <a href=""https://12factor.net/config"" rel=""noreferrer"">config point of the 12 factor app</a> I decided to override my config file containing default value with environment variable.</p>
+
+<p>I have 3 <code>Dockerfile</code>s, one for an API, one for a front-end and one for a worker. I have one <code>docker-compose.yml</code> to run those 3 services plus a database.</p>
+
+<p>Now I'm wondering if I should define the environment variables in <code>Dockerfile</code>s or <code>docker-compose.yml</code> ? What's the difference between using one rather than another ?</p>
+","9434800","","","","","2019-08-12 02:29:48","Define environment variable in Dockerfile or docker-compose?","<docker><docker-compose><environment-variables><dockerfile><12factor>","1","0","0","","","CC BY-SA 4.0"
+"57413945","1","57574073","","2019-08-08 13:37:15","","3","1287","<p>I am deploying simple hello-world microservice that listens on port given by following variable:</p>
+
+<pre><code>PORT = os.environ.get(""TEST_SERVICE_PORT"", """").strip() or ""50001""
+</code></pre>
+
+<p>I deployed it without configuring any variables on container, and expected it to serve on default 50001 port, but instead got error </p>
+
+<pre><code>socket.gaierror: [Errno -8] Servname not supported for ai_socktype
+</code></pre>
+
+<p>When I logged into container and checked environment, I found out that evironment is filled with different variables (some of them belong to other services), and <code>TEST_SERVICE_PORT</code> variable exists and contains definitely not port:</p>
+
+<pre><code>root@test-service-697464787c-xpd6k:/opt/app/src# env | grep TEST
+TEST_SERVICE_PORT_7002_TCP_ADDR=10.145.23.43
+TEST_SERVICE_SERVICE_PORT_GRPC_API=7002
+TEST_SERVICE_PORT_7002_TCP_PORT=7002
+TEST_SERVICE_PORT=tcp://10.145.23.43:7002
+TEST_SERVICE_SERVICE_HOST=10.145.23.43
+TEST_SERVICE_PORT_7002_TCP=tcp://10.145.23.43:7002
+TEST_SERVICE_PORT_7002_TCP_PROTO=tcp
+TEST_SERVICE_SERVICE_PORT=7002
+</code></pre>
+
+<p>I have following questions and were not able find answers to them in documentation:</p>
+
+<p>What created this variables? Could I somehow isolate container from them? Or are they set intentionally by kubernetes, and serve some purpose I don't know about? How should I name my configuration variables to avoid naming collisions? Should I use that variables istead of using services names as hostnames? </p>
+
+<p>There is <a href=""https://kubernetes.io/docs/concepts/containers/container-environment-variables/"" rel=""nofollow noreferrer"">following documentation</a>, but it only explains variable <code>TEST_SERVICE_SERVICE_PORT</code> and <code>TEST_SERVICE_SERVICE_HOST</code>. What <code>TEST_SERVICE_PORT</code> and others mean then? What adds <code>TEST_SERVICE_SERVICE_PORT_GRPC_API</code>?</p>
+
+<p>There is also Istio and Ambassador gateway installed on cluster that I'm using.</p>
+","816449","","7137297","","2019-08-22 10:22:30","2019-08-22 10:22:30","From where appeared these variables in my kubernetes container?","<kubernetes><environment-variables><12factor>","2","5","0","","","CC BY-SA 4.0"

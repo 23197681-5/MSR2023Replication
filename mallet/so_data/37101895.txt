@@ -1,0 +1,1 @@
+Electron: Express.js server query Mongo DB before it's ready

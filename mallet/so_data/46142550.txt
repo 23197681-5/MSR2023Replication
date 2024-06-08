@@ -1,0 +1,1 @@
+How can I automatically log warning and error from the console in Electron?

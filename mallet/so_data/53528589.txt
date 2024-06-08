@@ -1,0 +1,1 @@
+Is it possible to check if a system is on LAN v WiFi via nodejs?

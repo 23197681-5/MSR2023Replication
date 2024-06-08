@@ -1,0 +1,1 @@
+Electron keep getting selected when win.show();

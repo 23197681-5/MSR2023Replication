@@ -1,0 +1,1 @@
+How to specify for file with double extension in file explorer such a vcf.gz in electron?

@@ -1,0 +1,1 @@
+Event listener in React/Redux in separate file (electron)

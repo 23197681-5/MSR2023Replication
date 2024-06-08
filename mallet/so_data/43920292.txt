@@ -1,0 +1,1 @@
+NodeRT - StorageFile.openAsync return undefined fileStream, but no error

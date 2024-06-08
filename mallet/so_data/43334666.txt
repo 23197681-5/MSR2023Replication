@@ -1,0 +1,1 @@
+why doe Electron "new Set([large iterable])" produce an empty set?

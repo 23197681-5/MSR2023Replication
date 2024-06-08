@@ -1,0 +1,1 @@
+Cycle through multiple option of multiple select object and select option based on SQL query result

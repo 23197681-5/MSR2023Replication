@@ -1,0 +1,1 @@
+Electron doesnt execute http call to local spring server, curl work

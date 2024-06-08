@@ -1,0 +1,1 @@
+Spectron available method doesn't work properly

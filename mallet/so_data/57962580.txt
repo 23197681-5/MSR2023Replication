@@ -1,0 +1,1 @@
+Building dmg for electron app on MacOS take 2-3 minute

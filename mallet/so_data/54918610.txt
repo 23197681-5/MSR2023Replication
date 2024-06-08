@@ -1,0 +1,1 @@
+electron app always placed at the top with full-width and other window should be placed under it

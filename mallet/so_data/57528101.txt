@@ -1,0 +1,1 @@
+Why Electron spawn a process per each window?

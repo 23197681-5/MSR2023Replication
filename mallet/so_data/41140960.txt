@@ -1,0 +1,1 @@
+Where can I find the log for my Electron app in production?

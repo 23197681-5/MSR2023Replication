@@ -1,0 +1,1 @@
+Allow a HTML file which requires external file to be used in Electron

@@ -1,0 +1,1 @@
+find only matching element from a JSON array in Ne DB/react native-local-mongo/mongo db

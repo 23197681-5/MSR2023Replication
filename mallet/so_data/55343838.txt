@@ -1,0 +1,1 @@
+How can I add a loading gif while my nw.js application read a csv file?

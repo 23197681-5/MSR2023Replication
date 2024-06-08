@@ -1,0 +1,1 @@
+Electron: how to serve file from appdata

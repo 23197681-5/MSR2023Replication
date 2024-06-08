@@ -1,0 +1,1 @@
+onDragEnd & onDrag value seem off in React?

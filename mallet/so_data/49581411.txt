@@ -1,0 +1,1 @@
+Why Electron+React ha different act in Dev and Prod Mode?

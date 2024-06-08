@@ -1,0 +1,1 @@
+Electron packaged for win32 doe not work

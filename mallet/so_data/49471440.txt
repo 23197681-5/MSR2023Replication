@@ -1,0 +1,1 @@
+Loading compiled javascript in nw.js crash app on macos

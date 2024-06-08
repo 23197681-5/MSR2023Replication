@@ -1,0 +1,1 @@
+Async operation with nodegit on electron not working

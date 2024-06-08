@@ -1,0 +1,1 @@
+Yarn link work for one file but throw error for another file in same Angular project

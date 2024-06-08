@@ -1,0 +1,1 @@
+Electron app show blank screen when built with electron-builder

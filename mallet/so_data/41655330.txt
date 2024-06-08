@@ -1,0 +1,1 @@
+Flask only working a expected in debug mode

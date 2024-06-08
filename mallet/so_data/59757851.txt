@@ -1,0 +1,1 @@
+Node fire 'close' for spawned external application immediately (macOS only)

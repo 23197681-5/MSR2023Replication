@@ -1,0 +1,1 @@
+How doe electron handle global dependency

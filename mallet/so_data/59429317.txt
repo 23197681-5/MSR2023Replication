@@ -1,0 +1,1 @@
+HTML5 Canvas shape using class (Node.js require)

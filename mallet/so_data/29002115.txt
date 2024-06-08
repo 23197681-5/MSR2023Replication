@@ -1,0 +1,1 @@
+Identify when single page app is running a a nw.js app

@@ -1,0 +1,1 @@
+Javascript syntax error swallowed and hidden in async/await function

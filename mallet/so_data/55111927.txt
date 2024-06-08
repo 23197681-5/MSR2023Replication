@@ -1,0 +1,1 @@
+Reason why Electron application do not share one Google Chrome V8 engine instance

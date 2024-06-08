@@ -1,0 +1,1 @@
+Can electron apps play any video supported locally?

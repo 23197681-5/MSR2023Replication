@@ -1,0 +1,1 @@
+Can I tell one BrowserWindow to pas certain link to another BrowserWindow instance?

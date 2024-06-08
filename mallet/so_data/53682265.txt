@@ -1,0 +1,1 @@
+Electron app only run in the background and doesn't show

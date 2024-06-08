@@ -1,0 +1,1 @@
+Can I secure resource other than javascript in Nodewebkit?

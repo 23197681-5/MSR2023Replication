@@ -1,0 +1,1 @@
+npm run -- if start command entered manually it throw error command not found

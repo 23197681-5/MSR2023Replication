@@ -1,0 +1,1 @@
+Electron AutoUpdate doe not apply after restart. OSX

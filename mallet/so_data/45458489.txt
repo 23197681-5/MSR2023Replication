@@ -1,0 +1,1 @@
+Use sequelize query result inside a jquery event handler

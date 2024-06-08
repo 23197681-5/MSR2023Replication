@@ -1,0 +1,1 @@
+Don't add method to the wrong prototype

@@ -1,0 +1,1 @@
+Nodejs send command to http server to highlight or color the DOM element

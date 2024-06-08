@@ -1,0 +1,1 @@
+Storing cs an graphic outside .asar

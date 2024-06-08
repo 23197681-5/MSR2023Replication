@@ -1,0 +1,1 @@
+Using Electron with Reactstrap cause error: Uncaught SyntaxError: Unexpected token :

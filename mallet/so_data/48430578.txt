@@ -1,0 +1,1 @@
+NodeJS and Electron - request-promise in back-end freeze CSS animation in front-end

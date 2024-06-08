@@ -1,0 +1,1 @@
+Disable keyboard shortcut Alt + Tab in electron application

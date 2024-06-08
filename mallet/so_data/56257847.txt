@@ -1,0 +1,1 @@
+<a href="javascript:history.back()" > doe work in Chrome, but in Electron always go to index.html

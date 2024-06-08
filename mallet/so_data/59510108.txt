@@ -1,0 +1,1 @@
+is there any way to pas the propertyname a a variable in query while removing database entry in nedb?

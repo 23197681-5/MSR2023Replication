@@ -1,0 +1,1 @@
+Typeorm database query blocking electron ui thread

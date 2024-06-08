@@ -1,0 +1,1 @@
+Smoothie chart show empty with electron vuejs

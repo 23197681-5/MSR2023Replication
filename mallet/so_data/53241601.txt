@@ -1,0 +1,1 @@
+window.screenX inconsistency in Windows 10 with Electron (Chrome)

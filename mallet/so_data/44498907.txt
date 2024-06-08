@@ -1,0 +1,1 @@
+How to load j embbed in electron app ? like twitter embbed

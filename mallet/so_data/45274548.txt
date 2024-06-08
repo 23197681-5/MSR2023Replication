@@ -1,0 +1,1 @@
+node.js require return a string instead of module object

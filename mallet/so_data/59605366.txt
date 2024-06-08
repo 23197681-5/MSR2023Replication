@@ -1,0 +1,1 @@
+Electron app duplicating variable when importing from two different classes...?

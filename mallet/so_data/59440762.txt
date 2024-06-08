@@ -1,0 +1,1 @@
+Measuring the height of text according to CSS rule – _without a browser rendering_ – for use with a virtualized list, to specify height in advance

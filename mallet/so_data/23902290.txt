@@ -1,0 +1,1 @@
+Node-webkit work on Mac, crash and can't load module on Windows

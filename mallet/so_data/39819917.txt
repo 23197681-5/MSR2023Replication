@@ -1,0 +1,1 @@
+Creating Electron window with variable for width and height result in no window, and no error

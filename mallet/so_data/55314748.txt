@@ -1,0 +1,1 @@
+What are the risk of connecting to database directly from Electron app?

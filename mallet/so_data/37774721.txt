@@ -1,0 +1,1 @@
+Binding custom click event onto chrome console

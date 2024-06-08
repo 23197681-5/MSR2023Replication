@@ -1,0 +1,1 @@
+how to pas a html <select> box value into another j file in electron

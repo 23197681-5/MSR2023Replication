@@ -1,0 +1,1 @@
+electron's remote.getGlobal() return "undefined" after window.location.replace()

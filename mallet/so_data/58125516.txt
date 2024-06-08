@@ -1,0 +1,1 @@
+How to create electron auto update using private github repository?

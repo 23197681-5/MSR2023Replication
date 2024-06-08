@@ -1,0 +1,1 @@
+Is putting a modal in javascript html cs the same a in electron js?

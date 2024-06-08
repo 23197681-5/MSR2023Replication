@@ -1,0 +1,1 @@
+Correct way to export/define function in Electron's Renderer

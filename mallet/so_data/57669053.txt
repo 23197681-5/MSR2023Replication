@@ -1,0 +1,1 @@
+How to get mouse-move co-ordinate from the page inside the electronjs webview?

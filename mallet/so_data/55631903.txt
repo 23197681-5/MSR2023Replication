@@ -1,0 +1,1 @@
+declare variable in angular in a way that all function have access to it

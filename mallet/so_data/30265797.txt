@@ -1,0 +1,1 @@
+System.import async module loading conflict with script tag sync loading

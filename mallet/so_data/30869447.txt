@@ -1,0 +1,1 @@
+NWJS access external file on FlashDrive

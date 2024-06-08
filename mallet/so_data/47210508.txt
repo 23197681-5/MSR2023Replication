@@ -1,0 +1,1 @@
+How to pas user input from one j file to another

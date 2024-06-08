@@ -1,0 +1,1 @@
+Bcrypt compare always return false, hash length is alright

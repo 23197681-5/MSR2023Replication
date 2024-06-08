@@ -1,0 +1,1 @@
+Accesing one of the opened window from a controller

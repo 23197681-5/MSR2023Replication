@@ -1,0 +1,1 @@
+'console.log' doe not work in Webstorm in testing Electron application

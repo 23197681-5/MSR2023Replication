@@ -1,0 +1,1 @@
+Electron-packager doe not package node module which name are started from "@"

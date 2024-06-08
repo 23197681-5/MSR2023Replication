@@ -1,0 +1,1 @@
+weird symbol in electron javascript

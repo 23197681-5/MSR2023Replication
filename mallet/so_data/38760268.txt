@@ -1,0 +1,1 @@
+Child window can't be maximized in Electron in GNU+Linux

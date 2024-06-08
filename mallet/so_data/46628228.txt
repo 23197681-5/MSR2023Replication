@@ -1,0 +1,1 @@
+electron on macOSX - copy file into ~/Library

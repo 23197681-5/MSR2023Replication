@@ -1,0 +1,1 @@
+How to improve Electron error message in terminal when using karma-electron?

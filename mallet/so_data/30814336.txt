@@ -1,0 +1,1 @@
+Error message and console log in Electron?

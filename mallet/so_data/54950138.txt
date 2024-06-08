@@ -1,0 +1,1 @@
+electron javascript separate class in different file

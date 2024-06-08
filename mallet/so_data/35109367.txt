@@ -1,0 +1,1 @@
+Async challenge when looping over url in nightmare.js

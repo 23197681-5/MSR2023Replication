@@ -1,0 +1,1 @@
+Show file in Electron Dialog/showOpenDialog when open directory

@@ -1,0 +1,1 @@
+running function more than one time return "error: Can't set header after they are sent"

@@ -1,0 +1,1 @@
+How should I render web page with Electron without showing them to the user?

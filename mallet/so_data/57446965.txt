@@ -1,0 +1,1 @@
+Electron opening multiple window package.json tweak

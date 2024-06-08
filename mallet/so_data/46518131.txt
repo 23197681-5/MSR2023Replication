@@ -1,0 +1,1 @@
+Setting up session in an Electron App

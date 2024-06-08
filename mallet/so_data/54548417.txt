@@ -1,0 +1,1 @@
+Response to preflight request doesn't pas access control check even though core is enabled

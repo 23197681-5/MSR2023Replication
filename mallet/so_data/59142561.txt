@@ -1,0 +1,1 @@
+Where can I find a table with VSCode version matched with Electron versions?

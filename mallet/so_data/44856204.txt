@@ -1,0 +1,1 @@
+How to compile/build other JS file into main.js on Electron/Vue

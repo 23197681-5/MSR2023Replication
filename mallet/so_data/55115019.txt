@@ -1,0 +1,1 @@
+After npm read package.json, what run Electron?

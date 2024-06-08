@@ -1,0 +1,1 @@
+How to inspect element in a desktop application?

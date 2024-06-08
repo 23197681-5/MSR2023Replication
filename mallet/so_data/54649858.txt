@@ -1,0 +1,1 @@
+Access renderer process cooky by electron's main process

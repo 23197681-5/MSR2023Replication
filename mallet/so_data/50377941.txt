@@ -1,0 +1,1 @@
+preconnect resource hint not working in electron but work fine in Chrome

@@ -1,0 +1,1 @@
+Correct way to import node module in node webkit

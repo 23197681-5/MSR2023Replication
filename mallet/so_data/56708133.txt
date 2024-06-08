@@ -1,0 +1,1 @@
+Not possible to build electron package correctly in window server machine(tfs agent)

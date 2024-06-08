@@ -1,0 +1,1 @@
+What is minimum system requirement to run electron apps?

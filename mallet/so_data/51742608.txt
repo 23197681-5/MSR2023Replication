@@ -1,0 +1,1 @@
+typescript set function member & using this

@@ -1,0 +1,1 @@
+Get value from JavaScript Promise.then()

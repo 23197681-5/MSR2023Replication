@@ -1,0 +1,1 @@
+Node's and Electron's module from inside Angular2

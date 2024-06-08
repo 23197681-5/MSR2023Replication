@@ -1,0 +1,1 @@
+Electron ipcRenderer message between two window doesn't work

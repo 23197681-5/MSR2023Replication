@@ -1,0 +1,1 @@
+How can I run script in served page in NW.js?

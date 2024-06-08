@@ -1,0 +1,1 @@
+Electron-builder desktop shortcut icon ha to be enabled manually

@@ -1,0 +1,1 @@
+Requiring j file containing 'ref' and 'ffi' node module from react file

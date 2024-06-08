@@ -1,0 +1,1 @@
+Electron: Perform sqlite (better-sqlite) db operation in another thread

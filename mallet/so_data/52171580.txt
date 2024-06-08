@@ -1,0 +1,1 @@
+Allow exactly two instance of Electron Main Process, but not more?

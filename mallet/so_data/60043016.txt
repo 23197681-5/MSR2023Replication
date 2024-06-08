@@ -1,0 +1,1 @@
+Angular + Electron : Conditionally add module to the output bundle

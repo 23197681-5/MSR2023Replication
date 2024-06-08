@@ -1,0 +1,1 @@
+Managing application setting in an Electron application

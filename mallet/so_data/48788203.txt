@@ -1,0 +1,1 @@
+Read data from the response header in Angular 5

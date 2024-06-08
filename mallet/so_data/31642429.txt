@@ -1,0 +1,1 @@
+Correct way to pas data from nodejs to angular in nwjs (node-webkit)

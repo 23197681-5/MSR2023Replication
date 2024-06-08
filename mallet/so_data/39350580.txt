@@ -1,0 +1,1 @@
+medium is canceled a status only after packaging in electron

@@ -1,0 +1,1 @@
+Electron handle console.log message in main process

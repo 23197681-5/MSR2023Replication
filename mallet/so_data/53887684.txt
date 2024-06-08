@@ -1,0 +1,1 @@
+Run node command a root in electron app

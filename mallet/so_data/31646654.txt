@@ -1,0 +1,1 @@
+Is nwjs fast enough for a medium manager application?

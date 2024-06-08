@@ -1,0 +1,1 @@
+React + Electron problem embedding local file

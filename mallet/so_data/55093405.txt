@@ -1,0 +1,1 @@
+Electron app.makeSingleInstance to avoid multiple instance thrown javascript error

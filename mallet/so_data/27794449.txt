@@ -1,0 +1,1 @@
+Unable to start multiple instance of node webkit app

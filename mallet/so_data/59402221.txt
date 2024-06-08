@@ -1,0 +1,1 @@
+How doe one build debug information file with electron-builder

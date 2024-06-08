@@ -1,0 +1,1 @@
+Send event from nodejs addon to javascript

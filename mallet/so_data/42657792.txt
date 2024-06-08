@@ -1,0 +1,1 @@
+Typescript + React/Redux: Property "XXX" doe not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes

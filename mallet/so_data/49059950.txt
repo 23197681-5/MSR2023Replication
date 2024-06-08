@@ -1,0 +1,1 @@
+Spectron launch 10 windows; hang and fails with Client initialization failed after 10 attempt

@@ -1,0 +1,1 @@
+path.resolve("") return root directory ("/") when packaged Electron App is run on MacOS

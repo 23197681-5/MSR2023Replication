@@ -1,0 +1,1 @@
+CoffeeScript class result in empty object

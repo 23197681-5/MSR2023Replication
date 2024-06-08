@@ -1,0 +1,1 @@
+Toggle image fails to toggle and flash the whole page on clicking with Electron

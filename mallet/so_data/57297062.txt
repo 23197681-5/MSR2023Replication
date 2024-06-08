@@ -1,0 +1,1 @@
+Require ('ffi') throw error in Electron application

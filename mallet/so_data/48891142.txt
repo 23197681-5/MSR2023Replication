@@ -1,0 +1,1 @@
+Application entry file doe not exist in Electron Builder

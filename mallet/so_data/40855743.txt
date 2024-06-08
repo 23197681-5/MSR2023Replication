@@ -1,0 +1,1 @@
+Variable give me wrong value inside function inside for loop

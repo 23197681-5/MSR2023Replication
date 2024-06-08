@@ -1,0 +1,1 @@
+Electron capture mouse event when window is not focused

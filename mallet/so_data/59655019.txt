@@ -1,0 +1,1 @@
+Electron with local http server, redirecting POST request fails pre-flight OPTIONS

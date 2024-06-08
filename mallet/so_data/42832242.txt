@@ -1,0 +1,1 @@
+run .swf file in electron project in window o

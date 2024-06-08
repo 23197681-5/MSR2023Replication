@@ -1,0 +1,1 @@
+NeDB update but remove field that wasn't updated, why?

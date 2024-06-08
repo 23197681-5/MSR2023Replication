@@ -1,0 +1,1 @@
+Electron React App work fine in development but not after it's been packaged

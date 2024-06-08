@@ -1,0 +1,1 @@
+Packaged Electron app doe not launch when run from Dock but work fine when run from Terminal

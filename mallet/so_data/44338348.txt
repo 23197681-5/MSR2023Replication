@@ -1,0 +1,1 @@
+Storing variable passed from node server to EJS file a input data for form

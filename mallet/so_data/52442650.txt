@@ -1,0 +1,1 @@
+Electron-Builder Linux update - APPIMAGE env is not defined

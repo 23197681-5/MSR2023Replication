@@ -1,0 +1,1 @@
+Self-signed certificate in Electron on Windows are not recognized until after restart

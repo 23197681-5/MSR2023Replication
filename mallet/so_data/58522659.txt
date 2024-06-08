@@ -1,0 +1,1 @@
+Istanbul Cover j file run by electron during jest or mocha test

@@ -1,0 +1,1 @@
+How to show accept term and condition window after click on application exe file

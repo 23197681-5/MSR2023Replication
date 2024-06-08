@@ -1,0 +1,1 @@
+Angular reading the value of a j function a undefined, even when the object ha value

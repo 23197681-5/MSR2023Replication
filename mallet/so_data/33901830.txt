@@ -1,0 +1,1 @@
+Inject multiple javascript source in nw.js

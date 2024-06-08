@@ -1,0 +1,1 @@
+Input field dead after clearing them

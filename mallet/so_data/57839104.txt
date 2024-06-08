@@ -1,0 +1,1 @@
+How can I use electron j app a a web browser for one localhost link?

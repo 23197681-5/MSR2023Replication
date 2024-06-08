@@ -1,0 +1,1 @@
+Opening two instance of web app (Electron) with IndexedDB

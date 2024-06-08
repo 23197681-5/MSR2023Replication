@@ -1,0 +1,1 @@
+What is the purpose of both Main and Renderer folder in Electron Webpack

@@ -1,0 +1,1 @@
+Spectron open Empty terminal during test run

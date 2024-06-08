@@ -1,0 +1,1 @@
+Reference to asset from dist folder with vue + webpack in electron app

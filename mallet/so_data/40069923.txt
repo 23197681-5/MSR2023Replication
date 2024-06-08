@@ -1,0 +1,1 @@
+Are the source code of Node.js desktop application protected?

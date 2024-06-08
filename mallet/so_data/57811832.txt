@@ -1,0 +1,1 @@
+Build electron window app with accessible resource

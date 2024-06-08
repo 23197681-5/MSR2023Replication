@@ -1,0 +1,1 @@
+Can't register click event in html BrowserWindow within Electron

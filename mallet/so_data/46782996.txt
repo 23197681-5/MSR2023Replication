@@ -1,0 +1,1 @@
+Loading and rendering the content of the window before displaying alert

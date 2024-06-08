@@ -1,0 +1,1 @@
+Single file component not rendering with Vuejs in Electron app

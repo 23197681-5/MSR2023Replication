@@ -1,0 +1,1 @@
+USB detail detection issue | using node-hid with angular and electron

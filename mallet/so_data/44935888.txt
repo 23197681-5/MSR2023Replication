@@ -1,0 +1,1 @@
+Enable user of a WebRtc app to download webrtc log via javascript

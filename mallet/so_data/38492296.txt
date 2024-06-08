@@ -1,0 +1,1 @@
+Certificate error wa raised when installing oracledb in Electron app

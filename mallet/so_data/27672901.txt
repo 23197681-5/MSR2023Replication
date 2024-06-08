@@ -1,0 +1,1 @@
+Read variable from a parent function

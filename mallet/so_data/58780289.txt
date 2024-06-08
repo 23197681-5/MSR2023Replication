@@ -1,0 +1,1 @@
+ElectronNet.CLI recognize version a 2.2 even though my version is 2.1

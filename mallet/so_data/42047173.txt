@@ -1,0 +1,1 @@
+How can we pas request from one page to another in electron

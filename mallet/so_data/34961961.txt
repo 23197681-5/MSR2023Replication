@@ -1,0 +1,1 @@
+Packaging electron app using electron-packer - folder shown not existing

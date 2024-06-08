@@ -1,0 +1,1 @@
+combineLatest() doe not work a expected

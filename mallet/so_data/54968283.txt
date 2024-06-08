@@ -1,0 +1,1 @@
+Angular source with REST service for both: web app and electron

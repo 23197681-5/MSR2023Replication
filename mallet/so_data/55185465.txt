@@ -1,0 +1,1 @@
+Unexpected token import when importing from other t file when running by mocha

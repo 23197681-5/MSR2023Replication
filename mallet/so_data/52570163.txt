@@ -1,0 +1,1 @@
+object key are undefined in if conditional, but inside the if statement I can access it

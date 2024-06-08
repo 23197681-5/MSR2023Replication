@@ -1,0 +1,1 @@
+fs.readFile look in wrong folder after electron-packager

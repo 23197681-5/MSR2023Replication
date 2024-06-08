@@ -1,0 +1,1 @@
+How to monitor for public/file.js change when using create-react-app?

@@ -1,0 +1,1 @@
+Electron steal focus to Windows 10 Touch Keyboard and make it unusable

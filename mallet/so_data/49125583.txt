@@ -1,0 +1,1 @@
+Node on Electron: FS ReadLine skip first x line of file

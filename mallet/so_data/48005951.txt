@@ -1,0 +1,1 @@
+How to update state from outside the react class?

@@ -1,0 +1,1 @@
+Jquery in electron j and node.js print and save PDF file one time only while running server

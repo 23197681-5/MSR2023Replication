@@ -1,0 +1,1 @@
+Dynamically loading Angular component in an Electron app

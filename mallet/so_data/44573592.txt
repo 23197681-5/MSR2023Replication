@@ -1,0 +1,1 @@
+Why do Node module go into .staging folder?

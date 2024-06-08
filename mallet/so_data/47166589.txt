@@ -1,0 +1,1 @@
+What doe the underscore character mean in this Javascript code sample?

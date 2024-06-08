@@ -1,0 +1,1 @@
+Create ZIP Files and Deploy a GitHub-Release on AppVeyor

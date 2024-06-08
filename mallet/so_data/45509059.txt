@@ -1,0 +1,1 @@
+Using TSX file with electron-compile error

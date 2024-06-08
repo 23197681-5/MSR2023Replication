@@ -1,0 +1,1 @@
+What's the right way to pas some initial data to a new window?

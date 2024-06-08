@@ -1,0 +1,1 @@
+Change Detection work intermittently when receiving data from Electron Container IPC Channel

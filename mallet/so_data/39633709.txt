@@ -1,0 +1,1 @@
+Chaining HTTP request in Electron using request-promise

@@ -1,0 +1,1 @@
+Regenerate ElectronJS window when appearance theme change in macOS

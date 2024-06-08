@@ -1,0 +1,1 @@
+Creating multiple instance of Angular2 app a Child to Parent in Electron

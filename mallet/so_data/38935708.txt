@@ -1,0 +1,1 @@
+React, two button into one component

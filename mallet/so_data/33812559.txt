@@ -1,0 +1,1 @@
+Passing variable to a newly opened window - nwj (node-webkit)

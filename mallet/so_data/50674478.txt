@@ -1,0 +1,1 @@
+Javascript Array look like it empty but ha a value

@@ -1,0 +1,1 @@
+Prevent Electron Chrome printToPDF from applying print medium type to iFrame content

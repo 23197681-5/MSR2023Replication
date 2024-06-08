@@ -1,0 +1,1 @@
+Read content of ZIP file via URLs

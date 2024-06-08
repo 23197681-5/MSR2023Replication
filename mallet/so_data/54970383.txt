@@ -1,0 +1,1 @@
+Is there a way to read the cache file from electron on linux?

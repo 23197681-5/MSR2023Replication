@@ -1,0 +1,1 @@
+How to get rounded corner on an Electron app?

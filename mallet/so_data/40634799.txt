@@ -1,0 +1,1 @@
+pas argument to app by D-click in javascript

@@ -1,0 +1,1 @@
+Multiple window managing: removing window from window list

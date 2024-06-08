@@ -1,0 +1,1 @@
+Nested single file component - vue.js with electron-forge

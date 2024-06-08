@@ -1,0 +1,1 @@
+pouchdb remote db replication "unauthorised" Cookie credential ignored in electron app

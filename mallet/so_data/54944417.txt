@@ -1,0 +1,1 @@
+launch many transaction typeorm into loop javascript

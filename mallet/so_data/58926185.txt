@@ -1,0 +1,1 @@
+DraftJS - convertToRaw throw contentState.getBlockMap is not a function in Electron app

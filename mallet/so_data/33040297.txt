@@ -1,0 +1,1 @@
+How can I debug Electron shell using the breakpad symbol in Visual Studio?

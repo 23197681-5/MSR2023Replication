@@ -1,0 +1,1 @@
+Two browser in the same Electron window

@@ -1,0 +1,1 @@
+Schedule job into queue when starting electron

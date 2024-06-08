@@ -1,0 +1,1 @@
+electron browser window get white screen in sandbox mode

@@ -1,0 +1,14 @@
+0	0,06666	run error command script start npm running node.js code line execute doe python shell argument work doesn't packaged node atom 
+1	0,12245	window open menu browser show event click icon windows button change close browserwindow set system disable default make bar showing 
+2	0,07113	desktop test apps web browser spectron chrome run testing angular google framework electronjs windows build selenium based nodejs api service 
+3	0,10392	module error find node require defined native typescript webpack import uncaught angular can't version react found nodejs project node.js file 
+4	0,11985	build electron-builder package windows file mac install electron-packager error folder create project packaging exe builder window linux production building installer 
+5	0,06471	server request http error client web angular node.js proxy data nodejs connect express mysql response api send post node remote 
+6	0,05088	node webkit working dev chrome mode tool print memory detect screen built device webrtc printer version make enable development work 
+7	0,03854	undefined property function read typeerror error return type object javascript uncaught string variable empty null class array promise call constructor 
+8	0,04324	variable code javascript function global node.js visual studio source vscode set environment access debug typescript object debugging inside external doe 
+9	0,09491	react angular work component function event working inside doesn't doe call vue ipcrenderer change data callback method javascript make properly 
+10	0,10996	file local load image html javascript save node.js path open directory nodejs read json resource download node write angular folder 
+11	0,05988	data database nedb sqlite object desktop user create query store offline session update input end localstorage multiple pouchdb local backend 
+12	0,0957	page html webview content element loading javascript script dom screen tag video window browserwindow load electronjs access change inside iframe 
+13	0,05475	process main renderer window child ipc multiple message browserwindow render access instance call event send parent communication object electron's running 

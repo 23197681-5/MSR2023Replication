@@ -1,0 +1,1 @@
+Angularjs change image src to “unsafe:” in node webkit application

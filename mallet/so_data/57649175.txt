@@ -1,0 +1,1 @@
+Packaged .net-core electron app doe not run

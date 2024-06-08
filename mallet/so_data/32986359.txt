@@ -1,0 +1,1 @@
+Listen for keyboard event and mouse movement outside of Electron app

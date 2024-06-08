@@ -1,0 +1,1 @@
+How can online/offline version of an HTML5 app access the same LocalStorage?

@@ -1,0 +1,1 @@
+How to handle link that open _blank window in node-webkit properly?

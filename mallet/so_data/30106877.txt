@@ -1,0 +1,1 @@
+Passing information between j and html part in electron (atom-shell)

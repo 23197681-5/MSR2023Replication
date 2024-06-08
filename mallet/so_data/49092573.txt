@@ -1,0 +1,1 @@
+which node module is my nwjs app using?

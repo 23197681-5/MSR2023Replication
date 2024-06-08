@@ -1,0 +1,1 @@
+Electron app stop rendering while running Javascript code

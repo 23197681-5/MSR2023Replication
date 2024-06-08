@@ -1,0 +1,1 @@
+Handle server error in SailsJS

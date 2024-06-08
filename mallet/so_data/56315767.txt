@@ -1,0 +1,1 @@
+Clarifications for storing image in sqlite database using nodejs and electron

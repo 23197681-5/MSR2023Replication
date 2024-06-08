@@ -1,0 +1,1 @@
+Mysql stop working after build in Electron

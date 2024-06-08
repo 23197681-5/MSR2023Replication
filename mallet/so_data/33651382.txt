@@ -1,0 +1,1 @@
+Node-Webkit: Kiosk mode blur the window and detaches keyboard event handler on OSX

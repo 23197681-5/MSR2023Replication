@@ -1,0 +1,1 @@
+Is it possible to catch exception of renderer process in electron main process?

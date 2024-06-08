@@ -1,0 +1,1 @@
+Code signing for MacOS work in SSH session, but not in Jenkins CI

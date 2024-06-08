@@ -1,0 +1,1 @@
+What is the proper way to add file to a packaged electron app?

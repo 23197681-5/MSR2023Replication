@@ -1,0 +1,1 @@
+Chromium showing scroll bar in electron app permanently?

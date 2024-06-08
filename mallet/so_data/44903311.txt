@@ -1,0 +1,1 @@
+How to use <webview> method inside a react component

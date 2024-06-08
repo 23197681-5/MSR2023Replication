@@ -1,0 +1,1 @@
+making ajax request to fetch dictionary content

@@ -1,0 +1,1 @@
+How to fix " --asar doe not take any arguments, it only ha sub-properties" warning

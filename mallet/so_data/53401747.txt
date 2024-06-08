@@ -1,0 +1,1 @@
+I want to print html file directly to printer with A5 Landscape setting in electron

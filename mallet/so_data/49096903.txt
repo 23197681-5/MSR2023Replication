@@ -1,0 +1,1 @@
+ember-electron use f in third party npm module

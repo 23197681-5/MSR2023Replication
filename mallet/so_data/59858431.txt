@@ -1,0 +1,1 @@
+electron app crash on select input type file

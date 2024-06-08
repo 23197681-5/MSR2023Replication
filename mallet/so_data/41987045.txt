@@ -1,0 +1,1 @@
+app ha already been declared within try/catch

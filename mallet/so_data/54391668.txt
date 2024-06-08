@@ -1,0 +1,1 @@
+Why doe setMenu(null) work on Windows but not on Linux?

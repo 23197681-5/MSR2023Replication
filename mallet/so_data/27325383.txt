@@ -1,0 +1,1 @@
+Does node-webkit have performance issue with cs filters?

@@ -1,0 +1,1 @@
+Way to read filename from directory and output to JSON with Electron & React

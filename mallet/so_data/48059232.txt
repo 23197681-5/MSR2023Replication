@@ -1,0 +1,1 @@
+Electron load file in the renderer process

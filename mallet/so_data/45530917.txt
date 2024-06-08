@@ -1,0 +1,1 @@
+Need a solution for an Electron application that us a shared database

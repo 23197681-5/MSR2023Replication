@@ -1,0 +1,1 @@
+Why do some people refer to web view a "native apps"?

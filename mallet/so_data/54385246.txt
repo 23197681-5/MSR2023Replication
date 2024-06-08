@@ -1,0 +1,1 @@
+Access node-based module in renderer process securely

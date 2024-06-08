@@ -1,0 +1,1 @@
+Why doe this Spectron code block my Electron app after the first click?

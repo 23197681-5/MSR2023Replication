@@ -1,0 +1,1 @@
+Core difference between various automation and testing library

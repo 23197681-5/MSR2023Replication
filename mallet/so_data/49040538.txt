@@ -1,0 +1,1 @@
+Getting error trying to create a new file using different method with node f in an Electron app

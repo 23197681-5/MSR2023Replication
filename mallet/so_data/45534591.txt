@@ -1,0 +1,1 @@
+get installed o application with NodeJS and Electron

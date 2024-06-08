@@ -1,0 +1,1 @@
+Site doe not work when imported to Electron JS

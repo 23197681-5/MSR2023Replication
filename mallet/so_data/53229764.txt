@@ -1,0 +1,1 @@
+NodeJS Windows 10 geolocation module throw error in electron when the app start

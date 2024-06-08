@@ -1,0 +1,1 @@
+Spectron app.client.close() doe not trigger on('close' event

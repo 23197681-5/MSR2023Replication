@@ -1,0 +1,1 @@
+Make Vue watch for change of class field value of non-store class

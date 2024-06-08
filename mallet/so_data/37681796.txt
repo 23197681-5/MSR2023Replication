@@ -1,0 +1,1 @@
+Electron freeze when sending large object synchronously over ipc

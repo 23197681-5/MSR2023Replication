@@ -1,0 +1,1 @@
+Node.js effect in Thermite for Electron

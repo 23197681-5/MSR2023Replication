@@ -1,0 +1,1 @@
+why addeventlistener work only for one element in for loop?

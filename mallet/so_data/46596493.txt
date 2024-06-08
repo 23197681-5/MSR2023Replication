@@ -1,0 +1,1 @@
+Why doe my Electron app quit when closing a Renderer window?

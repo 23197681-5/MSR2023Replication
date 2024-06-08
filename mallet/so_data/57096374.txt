@@ -1,0 +1,1 @@
+How to create tab with electron-tabs package?

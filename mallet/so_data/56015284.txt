@@ -1,0 +1,1 @@
+Seeing `%s` instead of specific property in react error message in electron project?

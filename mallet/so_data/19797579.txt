@@ -1,0 +1,1 @@
+Controlling window that flash ha opened in node-webkit

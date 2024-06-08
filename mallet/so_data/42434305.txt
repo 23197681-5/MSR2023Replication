@@ -1,0 +1,1 @@
+javascript electron: how to increase performance and prevent crash when working with big amount of data

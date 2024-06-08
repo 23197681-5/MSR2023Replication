@@ -1,0 +1,1 @@
+electron-forge app start up with blank screen

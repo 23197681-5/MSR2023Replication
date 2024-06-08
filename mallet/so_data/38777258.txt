@@ -1,0 +1,1 @@
+NWJS (node-webkit) window function not working

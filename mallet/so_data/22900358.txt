@@ -1,0 +1,1 @@
+Node-webkit app instance doe not allow form input

@@ -1,0 +1,13 @@
+0	0,05098	instal packag build fail updat error version linux window break releas broken npm run game depend in-rang ubuntu modul find 
+1	0,07399	window app open work desktop icon updat doesn't crash start doe close version linux screen mac notif maco launch show 
+2	0,05591	window theme bar scroll dark text menu mode size screen font icon chang tab button color set editor view add 
+3	0,05868	room messag user show invit notif list set button group doesn't chat join click event email devic avatar send don't 
+4	0,0631	branch account github page user repositori password add desktop implement login chang commit updat creat error key repo publish set 
+5	0,05858	file open folder window project save chang directori crash delet note path editor view drag work can't creat multipl git 
+6	0,05523	request featur add support option note abil set tag custom feature suggestion list api search variabl creat disabl plugin document 
+7	0,0386	add page video play track link download imag load support show channel url button feature preview content file song call 
+8	0,04725	line code highlight markdown text render syntax charact file bug html support block work export type editor break display tag 
+9	0,05678	test error cypress run fail command set browser doe log chrome add element spec load pass work server report electron 
+10	0,02081	error uncaught read properti typeerror undefin object enoent function modul file call spawn find directory null miss undefinedtypeerror remot objec 
+11	0,03236	wallet sync connect mist ethereum account error can't show contract send eth ether node transact cpu problem issu usag block 
+12	0,04768	work shortcut search keyboard doesn't menu key text tab select click doe input add ctrl button focus past copi type 

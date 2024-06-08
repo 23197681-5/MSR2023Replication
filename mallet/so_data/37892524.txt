@@ -1,0 +1,1 @@
+How doe require('atom') work?

@@ -1,0 +1,1 @@
+How doe document.getSelection work under reactjs environment?

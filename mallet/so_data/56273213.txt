@@ -1,0 +1,1 @@
+How navigate with goBack() in an iframe by button that are located in the index.html in Electron?

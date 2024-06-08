@@ -1,0 +1,1 @@
+Can Spectron, mocha, and chai assert that variable have expected value in an Electron-app?

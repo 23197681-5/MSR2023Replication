@@ -1,0 +1,1 @@
+Electron, React and WebSockets cause WebSocket.Server is not a constructor

@@ -1,0 +1,1 @@
+Shared resource in package made by Electron

@@ -1,0 +1,1 @@
+smoothstate stop other javascript from running (electron)

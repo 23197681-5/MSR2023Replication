@@ -1,0 +1,1 @@
+Create Exe file using Electron without resource folder

@@ -1,0 +1,1 @@
+How to disable alert dialog when error occur in Atom Electron

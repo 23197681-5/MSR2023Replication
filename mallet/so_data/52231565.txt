@@ -1,0 +1,1 @@
+I can see line on a three.js object, even though wireframe is off

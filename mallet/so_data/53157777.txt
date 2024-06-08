@@ -1,0 +1,1 @@
+Node module work for electron but not for Mocha

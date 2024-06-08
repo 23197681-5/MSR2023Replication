@@ -1,0 +1,1 @@
+Does ElectronJS have the ability to show mac control button in full screen?

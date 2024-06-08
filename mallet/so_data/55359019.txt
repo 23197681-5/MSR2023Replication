@@ -1,0 +1,1 @@
+Ubuntu doe not show the maximize button in electron

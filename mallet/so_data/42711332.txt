@@ -1,0 +1,1 @@
+how to use electron browser window inside component in angular-cli?

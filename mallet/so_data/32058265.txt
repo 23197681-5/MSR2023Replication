@@ -1,0 +1,1 @@
+Minimize Node j application .js files?
